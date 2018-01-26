@@ -1,2 +1,2 @@
-# mdsebald.github.io
+# LinkBlox
 Landing page for LinkBlox application
