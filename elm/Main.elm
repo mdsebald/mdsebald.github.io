@@ -67,12 +67,11 @@ You can write content in a really natural way.
   * Embed snippets of `code`
   * Create [links](/)
   * Built with elm
-
-[github]: https://github.com/mdsebald
-[linkedin]: https://www.linkedin.com/in/marksebald/
-[blog]: http://www.mdsebald.org
-[twitter]: https://twitter.com/mdsebald
+[email](mailto:mdsebald@gmail.com)
+[github](https://github.com/mdsebald)
+[linkedin](https://www.linkedin.com/in/marksebald/)
+[blog](http://www.mdsebald.org)
+[twitter](https://twitter.com/mdsebald)
 
 """
 
---[email]: mailto:mdsebald@gmail.com
