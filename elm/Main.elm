@@ -60,18 +60,19 @@ markdown = """
 
 # LinkBlox - Linking blocks of functionality
 
-[Markdown](http://daringfireball.net/projects/markdown/) lets you
-write content in a really natural way.
+You can write content in a really natural way.
 
-  * You can have lists, like this one
+  * You can have lists,
   * Make things **bold** or *italic*
   * Embed snippets of `code`
   * Create [links](/)
-  * ...
+  * Built with elm
 
-The [elm-markdown][] package parses all this content, allowing you
-to easily generate blocks of `Element` or `Html`.
 
-[elm-markdown]: http://package.elm-lang.org/packages/evancz/elm-markdown/latest
+[email]: mailto:mdsebald@gmail.com
+[github]: https://github.com/mdsebald
+[linkedin]: https://www.linkedin.com/in/marksebald/
+[blog]: http://www.mdsebald.org
+[twitter]: https://twitter.com/mdsebald
 
 """
