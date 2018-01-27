@@ -68,7 +68,6 @@ You can write content in a really natural way.
   * Create [links](/)
   * Built with elm
 
-
 [email]: mailto:mdsebald@gmail.com
 [github]: https://github.com/mdsebald
 [linkedin]: https://www.linkedin.com/in/marksebald/
