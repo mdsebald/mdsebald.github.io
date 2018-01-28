@@ -7935,7 +7935,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
 
-var _mdsebald$linkblox$Main$markdown = '\r\n\r\n# LinkBlox - Linking blocks of functionality\r\n\r\nYou can write content in a really natural way.\r\n\r\n  * You can have lists,\r\n  * Make things **bold** or *italic*\r\n  * Embed snippets of `code`\r\n  * Create [links](/)\r\n  * Built with elm\r\n[email](mailto:mdsebald@gmail.com)\r\n[github](https://github.com/mdsebald)\r\n[linkedin](https://www.linkedin.com/in/marksebald/)\r\n[blog](http://www.mdsebald.org)\r\n[twitter](https://twitter.com/mdsebald)\r\n\r\n';
+var _mdsebald$linkblox$Main$markdown = '\r\n\r\n# LinkBlox - Linking blocks of functionality\r\n\r\nYou can write content in a really natural way.\r\n\r\n  * You can have lists,\r\n  * Make things **bold** or *italic*\r\n  * Embed snippets of `code`\r\n  * Create [links](/)\r\n  * Built with elm\r\n\r\nThe [elm-markdown][] package parses all this content, allowing you\r\nto easily generate blocks of `Element` or `Html`.\r\n\r\n[email](mailto:mdsebald@gmail.com)\r\n[github](https://github.com/mdsebald)\r\n[linkedin](https://www.linkedin.com/in/marksebald/)\r\n[blog](http://www.mdsebald.org)\r\n[twitter](https://twitter.com/mdsebald)\r\n\r\n';
 var _mdsebald$linkblox$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
 	A2(
 		_evancz$elm_markdown$Markdown$toHtml,
