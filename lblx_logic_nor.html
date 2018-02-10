@@ -3,17 +3,26 @@
 		<link rel="stylesheet" href="w3.css" />
 	</head><body>
 		<div class="header">
-			<h1>
+			<style>
+				a.NavbarLink:link {text-decoration: none; color: white }a.NavbarLink:visited {color: white;} a.Navbarlink:hover {color: dark-grey;} a.NavbarLink:active {color: white;} a.SourceCodeLink:link {text-decoration: none; color: #3c3c3c;} a.SourceCodeLink:visited {color: #3c3c3c;} a.SourceCodeLink:hover {color: blue;} a.SourceCodeLink:active {color: #3c3c3c;} 
+			</style><h1>
 				LinkBlox - Linking Blocks of Functionality
 			</h1>
-		</div><div class="w3-bar w3-black">
-			<a class="w3-bar-item w3-button" href="index.html">Home</a><a class="w3-bar-item w3-button" href="#">Doc</a><a class="w3-bar-item w3-button" href="BlockTypes.html">Block Types</a>
+		</div><div class="w3-bar w3-dark-grey">
+			<a class="w3-bar-item w3-button NavbarLink" href="index.html">Home</a><a class="w3-bar-item w3-button NavbarLink" href="#">Doc</a><a class="w3-bar-item w3-button NavbarLink" href="BlockTypes.html">Block Types</a>
 		</div><div class="w3-card w3-margin">
-			<p class="w3-blue w3-left-align">logic_nor:  NOR of All of the Binary Inputs</p><style>
-				a:link {text-decoration: none;}
-			</style><p>Source Code:  <a href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_nor.erl">lblx_logic_nor.erl</a></p>
-		</div><div class="w3-bar w3-black w3-margin-bottom">
-			<a class="w3-bar-item w3-button" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button" href="https://twitter.com/mdsebald">Twitter</a>
-		</div>
-	</body>
-</html>
+			<p class="w3-blue w3-left-align">logic_nor:  NOR of All of the Binary Inputs</p><p>Source Code:  <a class="SourceCodeLink" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_nor.erl">lblx_logic_nor.erl</a></p><p class="w3-left-align"> Description:  Set the block output value to boolean NOT OR of all of the inputs<br>
+				               <br>
+
+				</br><p class="w3-left-align">groups() -> [logic].</p><p class="w3-left-align">version() -> "0.1.0".</p><p class="w3-left-align">Configs:<br>
+					       {num_of_inputs, {2}},  % Default number of inputs to 2<br>
+						       {ignore_nulls, {false}} % Ignore NULL input values when calculating output value
+					</br><p class="w3-left-align">Inputs:<br>
+						      {inputs, [{empty, {empty}}]} % Array attribute
+					</br><p class="w3-left-align">Outputs:<br>
+						      {active_true, {empty, []}},<br>
+							      {active_false, {empty, []}}
+						</br>
+					</br><div class="w3-bar w3-dark-grey w3-margin-bottom">
+						<a class="w3-bar-item w3-button NavbarLink" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" href="https://twitter.com/mdsebald">Twitter</a>
+					</div></p></p>
