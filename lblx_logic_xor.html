@@ -5,23 +5,63 @@
 		<div class="header">
 			<style>
 				a.NavbarLink:link {text-decoration: none; color: white }a.NavbarLink:visited {color: white;} a.Navbarlink:hover {color: dark-grey;} a.NavbarLink:active {color: white;} a.SourceCodeLink:link {text-decoration: none; color: #3c3c3c;} a.SourceCodeLink:visited {color: #3c3c3c;} a.SourceCodeLink:hover {color: blue;} a.SourceCodeLink:active {color: #3c3c3c;} 
-			</style><h1>
+			</style><h2 class="w3-center">
 				LinkBlox - Linking Blocks of Functionality
-			</h1>
+			</h2>
 		</div><div class="w3-bar w3-dark-grey">
 			<a class="w3-bar-item w3-button NavbarLink" href="index.html">Home</a><a class="w3-bar-item w3-button NavbarLink" href="#">Doc</a><a class="w3-bar-item w3-button NavbarLink" href="BlockTypes.html">Block Types</a>
 		</div><div class="w3-card w3-margin">
-			<p class="w3-blue w3-left-align">logic_xor:  XOR of the Binary Inputs</p><p>Source Code:  <a class="SourceCodeLink" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_xor.erl">lblx_logic_xor.erl</a></p><p class="w3-left-align"> Description:  Set the block output value to boolean Exclusive OR of the inputs<br>
-				               <br>
+			<p class="w3-blue w3-left-align">logic_xor:  XOR of the Binary Inputs</p><p>Source Code:  <a class="SourceCodeLink" target="_blank" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_xor.erl">lblx_logic_xor.erl</a></p><p class="w3-left-align">Logic Exclusive OR</p><p class="w3-left-align">Set the block output value to boolean Exclusive OR of the inputs<br>
 
-				</br><p class="w3-left-align">groups() -> [logic].</p><p class="w3-left-align">version() -> "0.1.0".</p><p class="w3-left-align">Configs:</p><p class="w3-left-align">Inputs:<br>
-					      {input_a, {empty, {empty}}}, <br>
-						      {input_b, {empty, {empty}}} 
-					</br><p class="w3-left-align">Outputs:<br>
-						      {active_true, {empty, []}},<br>
-							      {active_false, {empty, []}}
-						</br>
-					</br><div class="w3-bar w3-dark-grey w3-margin-bottom">
-						<a class="w3-bar-item w3-button NavbarLink" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" href="https://twitter.com/mdsebald">Twitter</a>
-					</div></p>
-				</br>
+			</br><p class="w3-left-align"></p><p class="w3-left-align">Version: 0.1.0</p><p class="w3-left-align">Groups: logic</p><div class="w3-container">
+				<table class="w3-table w3-small">
+					<tr>
+						<th></th><th>Attrib ID</th><th>Data Type</th><th>Default Value</th><th>Range</th><th>Description</th>
+					</tr><tr>
+						<td style="font-weight: bold">Configs</td>
+					</tr><tr>
+						<td></td><td style="color:blue">block_name</td><td style="color:blue"> atom </td><td style="color:blue"> N/A </td><td style="color:blue"> read only </td><td style="color:blue">Block name, must be unique for all blocks on this node</td>
+					</tr><tr>
+						<td></td><td style="color:blue">block_module</td><td style="color:blue"> module_name </td><td style="color:blue"> N/A </td><td style="color:blue"> read only </td><td style="color:blue">Module name containing block code</td>
+					</tr><tr>
+						<td></td><td style="color:blue">version</td><td style="color:blue"> string </td><td style="color:blue"> N/A </td><td style="color:blue"> read only </td><td style="color:blue">Version of Block type code, used to create this block (Major.Minor.Patch)</td>
+					</tr><tr>
+						<td></td><td style="color:blue">description</td><td style="color:blue"> string </td><td style="color:blue"> "" </td><td style="color:blue"> User defined string </td><td style="color:blue">User defined description of this block</td>
+					</tr><tr>
+						<td style="font-weight: bold">Inputs</td>
+					</tr><tr>
+						<td></td><td style="color:blue">disable</td><td style="color:blue"> bool </td><td style="color:blue"> true </td><td style="color:blue"> true, false </td><td style="color:blue">Disable block execution</td>
+					</tr><tr>
+						<td></td><td style="color:blue">freeze</td><td style="color:blue"> bool </td><td style="color:blue"> false </td><td style="color:blue"> true, false </td><td style="color:blue">Freeze block outputs at last state</td>
+					</tr><tr>
+						<td></td><td style="color:blue">exec_in</td><td style="color:blue"> signal </td><td style="color:blue"> N/A </td><td style="color:blue"> N/A </td><td style="color:blue">Linked to exec_out, output attribute, to implement Control Flow</td>
+					</tr><tr>
+						<td></td><td style="color:blue">exec_interval</td><td style="color:blue"> int </td><td style="color:blue"> 0 </td><td style="color:blue"> 0..max int </td><td style="color:blue">Time between block executions, in Milliseconds</td>
+					</tr><tr>
+						<td></td><td>input_a</td><td></td><td></td><td></td><td>TODO</td>
+					</tr><tr>
+						<td></td><td>input_b</td><td></td><td></td><td></td><td>TODO</td>
+					</tr><tr>
+						<td style="font-weight: bold">Outputs</td>
+					</tr><tr>
+						<td></td><td style="color:blue">exec_out</td><td style="color:blue"> signal </td><td style="color:blue"> N/A </td><td style="color:blue"> N/A </td><td style="color:blue">Linked to exec_in, input attribute to implement Control Flow</td>
+					</tr><tr>
+						<td></td><td style="color:blue">status</td><td style="color:blue"> enum </td><td style="color:blue"> created </td><td style="color:blue"> created, initialed, normal, ... </td><td style="color:blue">Current block status</td>
+					</tr><tr>
+						<td></td><td style="color:blue">exec_method</td><td style="color:blue"> enum </td><td style="color:blue"> empty </td><td style="color:blue"> manual, input_cos, timer, ...</td><td style="color:blue">Reason block was executed</td>
+					</tr><tr>
+						<td></td><td style="color:blue">last_exec</td><td style="color:blue"> time stamp </td><td style="color:blue"> N/A </td><td style="color:blue"> Hrs:Mins:Secs:uSecs </td><td style="color:blue">Time stamp last time block was executed</td>
+					</tr><tr>
+						<td></td><td style="color:blue">value</td><td style="color:blue"> block type dependent </td><td style="color:blue"> null </td><td style="color:blue"> block type dependent </td><td style="color:blue">Main block output value</td>
+					</tr><tr>
+						<td></td><td>active_true</td><td></td><td></td><td></td><td>If main value is true, this is true, otherwise null</td>
+					</tr><tr>
+						<td></td><td>active_false</td><td></td><td></td><td></td><td>If main value is false, this is false, otherwise null</td>
+					</tr>
+				</table><p style="margin-left: 80px; color: blue; font-size: small">common block attributes</p>
+			</div></p>
+		</div><div class="w3-bar w3-dark-grey w3-margin-bottom">
+			<a class="w3-bar-item w3-button NavbarLink" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" href="https://twitter.com/mdsebald">Twitter</a><a class="w3-bar-item w3-right w3-small">&copy; Copyright 2018</a>
+		</div>
+	</body>
+</html>
