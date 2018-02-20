@@ -11,9 +11,7 @@
 		</div><div class="w3-bar w3-dark-grey">
 			<a class="w3-bar-item w3-button NavbarLink" href="index.html">Home</a><a class="w3-bar-item w3-button NavbarLink" href="#">Doc</a><a class="w3-bar-item w3-button NavbarLink" href="BlockTypes.html">Block Types</a>
 		</div><div class="w3-card w3-margin">
-			<p class="w3-blue w3-left-align">logic_toggle:  Toggle binary output value on block execution</p><p>Source Code:  <a class="SourceCodeLink" target="_blank" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_toggle.erl">lblx_logic_toggle.erl</a></p><p class="w3-left-align">Toggle Output</p><p class="w3-left-align">Toggle binary output value each time block is executed<br>
-
-			</br><p class="w3-left-align"></p><p class="w3-left-align">Version: 0.1.0</p><p class="w3-left-align">Groups: logic</p><div class="w3-container">
+			<p class="w3-blue w3-left-align">logic_toggle:  Toggle binary output value on block execution</p><p>Source Code:  <a class="SourceCodeLink" target="_blank" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_logic_toggle.erl">lblx_logic_toggle.erl</a></p><p class="w3-left-align">Toggle Output</p><p class="w3-left-align">Toggle binary output value each time block is executed</p><p class="w3-left-align"></p><p class="w3-left-align">Version: 0.1.0</p><p class="w3-left-align">Groups: logic</p><div class="w3-container">
 				<table class="w3-table w3-small">
 					<tr>
 						<th></th><th>Attrib ID</th><th>Data Type</th><th>Default Value</th><th>Range</th><th>Description</th>
@@ -28,7 +26,7 @@
 					</tr><tr>
 						<td></td><td style="color:blue">description</td><td style="color:blue"> string </td><td style="color:blue"> "" </td><td style="color:blue"> User defined string </td><td style="color:blue">User defined description of this block</td>
 					</tr><tr>
-						<td></td><td>initial_state</td><td></td><td></td><td></td><td>This is the initial value when transitioning from a null state</td>
+						<td></td><td>initial_state</td><td> bool </td><td> false </td><td> true, false </td><td>Initial value when transitioning from a null state</td>
 					</tr><tr>
 						<td style="font-weight: bold">Inputs</td>
 					</tr><tr>
@@ -52,13 +50,13 @@
 					</tr><tr>
 						<td></td><td style="color:blue">value</td><td style="color:blue"> block type dependent </td><td style="color:blue"> null </td><td style="color:blue"> block type dependent </td><td style="color:blue">Main block output value</td>
 					</tr><tr>
-						<td></td><td>active_true</td><td></td><td></td><td></td><td>If main value is true, this is true, otherwise null</td>
+						<td></td><td>active_true</td><td> bool </td><td> empty </td><td> true, null </td><td>If main value is true, this is true, otherwise null</td>
 					</tr><tr>
-						<td></td><td>active_false</td><td></td><td></td><td></td><td>If main value is false, this is false, otherwise null</td>
+						<td></td><td>active_false</td><td> bool </td><td> empty </td><td> false, null </td><td>If main value is false, this is false, otherwise null</td>
 					</tr>
-				</table><p style="margin-left: 80px; color: blue; font-size: small">common block attributes</p>
-			</div></p>
-		</div><div class="w3-bar w3-dark-grey w3-margin-bottom">
+				</table>
+			</div><p style="margin-left: 80px; color: blue; font-size: small">common block attributes</p>
+		</div><div class="w3-bar w3-dark-grey w3-margin-bottom w3-left-align">
 			<a class="w3-bar-item w3-button NavbarLink" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" href="https://twitter.com/mdsebald">Twitter</a><a class="w3-bar-item w3-right w3-small">&copy; Copyright 2018</a>
 		</div>
 	</body>
