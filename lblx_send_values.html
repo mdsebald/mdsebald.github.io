@@ -9,9 +9,9 @@
 				LinkBlox - Linking Blocks of Functionality
 			</h2>
 		</div><div class="w3-bar w3-dark-grey">
-			<a class="w3-bar-item w3-button NavbarLink" href="index.html">Home</a><a class="w3-bar-item w3-button NavbarLink" href="#">Doc</a><a class="w3-bar-item w3-button NavbarLink" href="BlockTypes.html">Block Types</a>
+			<a class="w3-bar-item w3-button NavbarLink" href="index.html">Home</a><a class="w3-bar-item w3-button NavbarLink" href="BlockTypes.html">Block Types</a><a class="w3-bar-item w3-button NavbarLink" href="Resources.html">Resources</a>
 		</div><div class="w3-card w3-margin">
-			<p class="w3-blue w3-left-align">send_values:  Send Values to other nodes</p><p>Source Code:  <a class="SourceCodeLink" target="_blank" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_send_values.erl">lblx_send_values.erl</a></p><p class="w3-left-align">Send Input values</p><p class="w3-left-align">Export values to receive_value block(s) on other LinkBlox Nodes.Send block and Receive block must have the same name.</p><p class="w3-left-align"></p><p class="w3-left-align">Version: 0.1.0</p><p class="w3-left-align">Groups: output, comm</p><div class="w3-container">
+			<p class="w3-blue w3-left-align">send_values:  Send Values to other nodes</p><p>Source Code:  <a class="SourceCodeLink" target="_blank" href="https://github.com/mdsebald/LinkBlox/blob/master/src/block_types/lblx_send_values.erl">lblx_send_values.erl</a></p><p class="w3-left-align">Send Input values</p><p class="w3-left-align">Export values to receive_value block(s) on other LinkBlox Nodes.<br />Send block and Receive block must have the same name.</p><p class="w3-left-align">Version: 0.1.0</p><p class="w3-left-align">Groups: output, comm</p><div class="w3-container">
 				<table class="w3-table w3-small">
 					<tr>
 						<th></th><th>Attrib ID</th><th>Data Type</th><th>Default Value</th><th>Range</th><th>Description</th>
@@ -26,17 +26,15 @@
 					</tr><tr>
 						<td></td><td style="color:blue">description</td><td style="color:blue"> string </td><td style="color:blue"> "" </td><td style="color:blue"> User defined string </td><td style="color:blue">User defined description of this block</td>
 					</tr><tr>
-						<td></td><td>num_of_nodes</td><td> int </td><td> 1 </td><td> 1..99 </td><td>Number of nodes to send values</td>
+						<td></td><td>num_of_nodes</td><td> int </td><td> 1 </td><td> 1..99 </td><td>Quantity of nodes to send values</td>
 					</tr><tr>
 						<td></td><td>nodes</td><td> atom array </td><td> null </td><td> N/A </td><td>Name of nodes to send values</td>
 					</tr><tr>
-						<td></td><td>num_of_values</td><td> int </td><td> 1 </td><td> 1..99 </td><td>Number of values to send or receive</td>
+						<td></td><td>num_of_values</td><td> int </td><td> 1 </td><td> 1..99 </td><td>Quantity of values</td>
 					</tr><tr>
 						<td style="font-weight: bold">Inputs</td>
 					</tr><tr>
 						<td></td><td style="color:blue">disable</td><td style="color:blue"> bool </td><td style="color:blue"> true </td><td style="color:blue"> true, false </td><td style="color:blue">Disable block execution</td>
-					</tr><tr>
-						<td></td><td style="color:blue">freeze</td><td style="color:blue"> bool </td><td style="color:blue"> false </td><td style="color:blue"> true, false </td><td style="color:blue">Freeze block outputs at last state</td>
 					</tr><tr>
 						<td></td><td style="color:blue">exec_in</td><td style="color:blue"> signal </td><td style="color:blue"> N/A </td><td style="color:blue"> N/A </td><td style="color:blue">Linked to exec_out, output attribute, to implement Control Flow</td>
 					</tr><tr>
@@ -52,8 +50,6 @@
 					</tr><tr>
 						<td></td><td style="color:blue">exec_method</td><td style="color:blue"> enum </td><td style="color:blue"> empty </td><td style="color:blue"> manual, input_cos, timer, ...</td><td style="color:blue">Reason block was executed</td>
 					</tr><tr>
-						<td></td><td style="color:blue">last_exec</td><td style="color:blue"> time stamp </td><td style="color:blue"> N/A </td><td style="color:blue"> Hrs:Mins:Secs:uSecs </td><td style="color:blue">Time stamp last time block was executed</td>
-					</tr><tr>
 						<td></td><td style="color:blue">value</td><td style="color:blue"> block type dependent </td><td style="color:blue"> null </td><td style="color:blue"> block type dependent </td><td style="color:blue">Main block output value</td>
 					</tr><tr>
 						<td></td><td>nodes_state</td><td> bool array </td><td> null </td><td> true, false </td><td>Binary indicator of node connected state</td>
@@ -61,7 +57,7 @@
 				</table>
 			</div><p style="margin-left: 80px; color: blue; font-size: small">common block attributes</p>
 		</div><div class="w3-bar w3-dark-grey w3-margin-bottom w3-left-align">
-			<a class="w3-bar-item w3-button NavbarLink" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" href="https://twitter.com/mdsebald">Twitter</a><a class="w3-bar-item w3-right w3-small">&copy; Copyright 2018</a>
+			<a class="w3-bar-item w3-button NavbarLink" target="_blank" href="http://www.mdsebald.org">Blog</a><a class="w3-bar-item w3-button NavbarLink" target="_blank" href="mailto:mdsebald@gmail.com">Email</a><a class="w3-bar-item w3-button NavbarLink" target="_blank" href="https://github.com/mdsebald">GitHub</a><a class="w3-bar-item w3-button NavbarLink" target="_blank" href="https://www.linkedin.com/in/marksebald/">LinkedIn</a><a class="w3-bar-item w3-button NavbarLink" target="_blank" href="https://twitter.com/mdsebald">Twitter</a><a class="w3-bar-item w3-right w3-small">&copy; Copyright 2018</a>
 		</div>
 	</body>
 </html>
